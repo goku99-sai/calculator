@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDisplay"
+    tools:context="com.fgadea.calc.calculadora.Main">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="101dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="100sp"
+        android:textColor="@color/textBop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/bAc"
+        android:layout_width="47dp"
+        android:layout_height="28dp"
+        android:background="@color/colorButtonOp"
+        android:elevation="60dp"
+        android:onClick="bAc"
+        android:layout_margin="1dp"
+        android:textColor="@color/textBop"
+        android:text="@string/bAc"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/gridLayout3" />
+
+    <GridLayout
+        android:layout_width="348dp"
+        android:layout_height="348dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/gridColor"
+        android:columnCount="4"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.967"
+        android:id="@+id/gridLayout3">
+
+        <Button
+            android:id="@+id/b7"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b7"
+            android:text="@string/b7"
+            android:textAppearance="@android:style/TextAppearance.Material.Widget.Button"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b8"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b8"
+            android:text="@string/b8"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b9"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b9"
+            android:text="@string/b9"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bMul"
+            style="@style/opButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonOp"
+            android:elevation="60dp"
+            android:onClick="bMul"
+            android:text="@string/bMul"
+            android:textColor="@color/textBop"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b4"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b4"
+            android:text="@string/b4"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b5"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b5"
+            android:text="@string/b5"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b6"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b6"
+            android:text="@string/b6"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bSub"
+            style="@style/opButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonOp"
+            android:elevation="60dp"
+            android:onClick="bSub"
+            android:text="@string/bSub"
+            android:textColor="@color/textBop"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b1"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b1"
+            android:text="@string/b1"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b2"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b2"
+            android:text="@string/b2"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b3"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b3"
+            android:text="@string/b3"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bAdd"
+            style="@style/opButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonOp"
+            android:elevation="60dp"
+            android:onClick="bAdd"
+            android:text="@string/bAdd"
+            android:textColor="@color/textBop"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/b0"
+            style="@style/numButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonNum"
+            android:elevation="60dp"
+            android:onClick="b0"
+            android:text="@string/b0"
+            android:textColor="@color/textBnum"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bPunto"
+            style="@style/opButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonOp"
+            android:elevation="60dp"
+            android:onClick="bPunto"
+            android:text="@string/bPunto"
+            android:textColor="@color/textBop"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bEqu"
+            style="@style/opButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonOp"
+            android:elevation="60dp"
+            android:onClick="bEqu"
+            android:text="@string/bEqu"
+            android:textColor="@color/textBop"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bDiv"
+            style="@style/opButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="1dp"
+            android:background="@color/colorButtonOp"
+            android:elevation="60dp"
+            android:onClick="bDiv"
+            android:text="@string/bDiv"
+            android:textColor="@color/textBop"
+            android:textSize="50dp" />
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>

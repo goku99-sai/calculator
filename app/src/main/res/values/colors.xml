@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4C4C4C</color>
+    <color name="colorPrimaryDark">#313131</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButtonNum">#e0e0e0</color>
+    <color name="colorButtonOp">#e99748</color>
+    <color name="colorDisplay">#4C4C4C</color>
+    <color name="textBnum">#000000</color>
+    <color name="textBop">#FFFFFF</color>
+    <color name="gridColor">#8e8e8e</color>
+</resources>
